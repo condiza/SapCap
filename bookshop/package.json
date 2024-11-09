@@ -7,11 +7,15 @@
   "private": true,
   "dependencies": {
     "@sap/cds": "^8",
-    "express": "^4"
+    "@sap/cds-odata-v2-adapter-proxy": "^1.9.21",
+    "dotenv": "^16.4.5",
+    "express": "^4",
+    "mongodb": "^6.10.0",
+    "nodemon": "^3.1.7"
   },
   "devDependencies": {
-    "@cap-js/sqlite": "^1",
-    "@cap-js/cds-types": "^0.6"
+    "@cap-js/cds-types": "^0.6",
+    "@cap-js/sqlite": "^1"
   },
   "scripts": {
     "start": "cds-serve"

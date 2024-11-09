@@ -1,6 +1,7 @@
 # CAP bookshop
 _out
 *.db
+.env
 *.sqlite
 connection.properties
 default-*.json
