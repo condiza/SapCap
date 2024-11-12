@@ -1,0 +1,38 @@
+{
+  "name": "SapCap",
+  "version": "1.0.0",
+  "description": "A simple CAP project.",
+  "repository": "<Add your repository here>",
+  "license": "UNLICENSED",
+  "private": true,
+  "dependencies": {
+    "@sap/cds": "^8.3.1",
+    "cors": "^2.8.5",
+    "dotenv": "^16.4.5",
+    "express": "^4",
+    "express-validator": "^7.2.0",
+    "uuid": "^10.0.0"
+  },
+  "devDependencies": {
+    "@cap-js/cds-typer": ">=0.1",
+    "@cap-js/cds-types": "^0.6",
+    "@cap-js/sqlite": "^1",
+    "@types/cors": "^2.8.17",
+    "@types/node": "^20.17.2",
+    "@types/uuid": "^10.0.0",
+    "nodemon": "^3.1.7",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.6.3"
+  },
+  "scripts": {
+    "start": "cds-serve",
+    "dev:debug": "nodemon --watch srv --watch db --exec node --inspect -r ts-node/register srv/app.ts",
+    "dev": "nodemon --watch srv --watch db --exec ts-node srv/app.ts",
+    "dev:js": "nodemon --watch srv --watch db --exec cds-serve -e cds,js,json,ts,routes.cds,cds",
+    "watch": "cds-ts w"
+  },
+  "imports": {
+    "#cds-models/*": "./@cds-models/*/index.js"
+  },
+  "type": "module"
+}

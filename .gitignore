@@ -1,7 +1,6 @@
-# CAP bookshop
+# CAP SapCap
 _out
 *.db
-.env
 *.sqlite
 connection.properties
 default-*.json
@@ -28,7 +27,7 @@ mta_archives/
 *.flattened-pom.xml
 
 # IDEs
-.vscode
+# .vscode
 # .idea
 
 # @cap-js/cds-typer
